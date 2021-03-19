@@ -1,5 +1,6 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { Button } from 'components/atoms/Button';
+//import ButtonSizeLg from 'components/atoms/Button/_size/_lg/button_size_lg';
 
 <Meta title="Atoms/Button" component={Button} />
 
@@ -7,5 +8,7 @@ import { Button } from 'components/atoms/Button';
 <Canvas>
     <Story name="Basic">
         <Button>Abcdd</Button>
+        <Button size="sm">Abcdd</Button>
+        <Button size="lg">Abcdd</Button>
     </Story>
 </Canvas>

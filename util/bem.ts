@@ -202,25 +202,36 @@ function composeSimple(mods: any[]) {
         const modValues = allMods[key]
         const propValue = props[key]
         
-        let foundModifierIndex = modValues.indexOf(propValue)
+        let foundModifierIndex = -1;
 
-        // обрабатываем кейс когда у нас один модификатор со значением true
-        if (foundModifierIndex === -1 && modValues[0] === true && propValue === false) {
+        for(let mv in modValues) {
+          if(modValues[mv].toString().indexOf(propValue) != -1)
+            foundModifierIndex = parseInt(mv);
+        }
+
+        if(foundModifierIndex != -1){
+          modifiers[key] = modValues[foundModifierIndex];
+        } else if(foundModifierIndex == -1) {
+          modifiers[key] = '';
+        }
+
+        /*if (foundModifierIndex === -1 && modValues[0] === true && propValue === false) {
           foundModifierIndex = 0
         }
         
         if (foundModifierIndex !== -1) {
           modifiers[key] = propValue
-          // если стоит флаг __passToProps = false, то не добавляем в пропсы
+
           if (!allModsPassProps[key][foundModifierIndex]) {
             delete newProps[key]
           }
-          // если значение для модификатора undefined, то удаляем свойство
+
         } else if (newProps.hasOwnProperty(key) && propValue === undefined) {
           delete newProps[key]
         } else {
-          modifiers[key] = modValues[0];
-        }
+          if(propValue != undefined)
+            modifiers[key] = modValues[0];
+        }*/
       }
 
       //newProps.className = entity(modifiers, [props.className]) 
@@ -239,7 +250,7 @@ function composeSimple(mods: any[]) {
       }
 
       newProps.className = nextCompactableClass;
-      console.log(nextCompactableClass)
+
       return createElement(Base, newProps)
     }
     if (__DEV__) {
