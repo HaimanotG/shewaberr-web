@@ -12,9 +12,35 @@ module.exports = {
   webpackFinal: async (config, { configType }) => {
     config.resolve.modules.push(path.resolve(__dirname, '../'));
     
-    config.module.rules.push({
+    /*config.module.rules.push({
       test: /\.sass$/,
       use: ['style-loader', 'css-loader', 'sass-loader'],
+      include: path.resolve(__dirname, '../'),
+    });*/
+
+    config.module.rules.push({
+      test: /\.sass$/,
+      use: ['style-loader', {
+        loader: 'css-loader',
+        options: {
+          modules: true
+        }
+      }, 
+      
+      {
+        loader: "postcss-loader",
+        options: {
+        
+          postcssOptions: {
+            plugins: [
+              "tailwindcss",
+              "autoprefixer"
+            ]
+          }
+        }
+      },
+      'sass-loader',
+    ],
       include: path.resolve(__dirname, '../'),
     });
 
