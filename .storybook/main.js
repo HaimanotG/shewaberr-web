@@ -8,6 +8,8 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+
+    '@storybook/addon-viewport',
   ],
   webpackFinal: async (config, { configType }) => {
     config.resolve.modules.push(path.resolve(__dirname, '../'));
