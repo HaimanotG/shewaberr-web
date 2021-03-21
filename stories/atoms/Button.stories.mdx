@@ -1,14 +1,39 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { Button } from 'components/atoms/Button';
-//import ButtonSizeLg from 'components/atoms/Button/_size/_lg/button_size_lg';
+
 
 <Meta title="Atoms/Button" component={Button} />
 
 # Button
 <Canvas>
-    <Story name="Basic">
-        <Button>Abcdd</Button>
-        <Button size="sm">Abcdd</Button>
-        <Button size="lg">Abcdd</Button>
+    <Story name="default">
+        <div>
+            <Button>Button</Button>
+        </div>
+    </Story>
+</Canvas>
+
+# Size
+<Canvas>
+    <Story name="sizes">
+        <Button>Small</Button>
+        <Button>Default</Button>
+        <Button>Medium</Button>
+        <Button>Large</Button>
+    </Story>
+</Canvas>
+
+# Colors 
+<Canvas>
+    <Story name="colors">
+        <Button>Green</Button>
+        <Button>Orange</Button>
+    </Story>
+</Canvas>
+
+# Outline
+<Canvas>
+    <Story name="outline">
+        <Button />
     </Story>
 </Canvas>
