@@ -1,0 +1,23 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+    Breadcrumb
+} from 'components/molecules/Breadcrumb';
+
+<Meta title="Molecules/Breadcrumb" component={Breadcrumb} />
+
+# Breadcrumb
+<Canvas>
+    <Story name="default">
+        <Breadcrumb>
+            <BreadcrumbItem>
+                Home
+            </BreadcrumbItem>
+            <BreadcrumbItem>
+                Second Level
+            </BreadcrumbItem>
+            <BreadcrumbItem>
+                Third Level
+            </BreadcrumbItem>
+        </Breadcrumb>
+    </Story>
+</Canvas>

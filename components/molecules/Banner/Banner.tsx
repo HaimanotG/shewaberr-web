@@ -1,5 +1,5 @@
 import React from 'react';
-import { IBannerProps } from 'components/molecules/Banner/IBannerProps';
+import IBannerProps from 'components/molecules/Banner/IBannerProps';
 import Styles from './banner.module.sass';
 
 export const Banner : React.SFC<IBannerProps> = ({ children, className = Styles.banner }) => (
