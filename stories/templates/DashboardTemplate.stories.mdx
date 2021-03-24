@@ -1,7 +1,12 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import {
-    DashboardTemplate
+    DashboardTemplate,
+    DashbaordTemplateSidenav,
+    DashboardTemplateContent
 } from 'components/templates/DashboardTemplate';
+import { Image } from 'components/atoms/Image';
+import { Divider } from 'components/atoms/Divider';
+import { ShewaberrFull } from 'components/atoms/Logo';
 
 
 <Meta title="Templates/DashboardTemplate" component={DashboardTemplate} />
@@ -10,7 +15,13 @@ import {
 <Canvas>
     <Story name="default">
         <DashboardTemplate>
-            df
+            <DashbaordTemplateSidenav>
+                <ShewaberrFull style={{height: "50px"}} />
+                <Divider color='blue' />
+            </DashbaordTemplateSidenav>
+            <DashboardTemplateContent>
+                dsf
+            </DashboardTemplateContent>
         </DashboardTemplate>
     </Story>
 </Canvas>
