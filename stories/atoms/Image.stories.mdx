@@ -1,0 +1,26 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Image } from 'components/atoms/Image';
+import ShewaberrLogo from '../../public/shewaberr_mini_logo.svg'
+
+<Meta title="Atoms/Image" component={Image} />
+
+# Image
+<Canvas>
+    <Story name="default">
+        <Image />
+    </Story>
+</Canvas>
+
+# Image sizes
+<Canvas>
+    <Story name="size">
+        <Image size="sm" />
+    </Story>
+</Canvas>
+
+# Image logos
+<Canvas>
+    <Story name="logo">
+        <Image src={ShewaberrLogo} />
+    </Story>
+</Canvas>
