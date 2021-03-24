@@ -1,0 +1,62 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Grid } from 'components/atoms/Grid';
+import {
+    Card,
+    CardContent,
+} from 'components/molecules/Card';
+
+<Meta title="Molecules/Card" component={Card} />
+
+# Cards
+<Canvas>
+    <Story name="default">
+        <Card>
+            <CardContent>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </CardContent>
+        </Card>
+    </Story>
+</Canvas>
+
+# Card animation
+<Canvas>
+    <Story name="animation">
+        <Grid>
+            <Card animation="zoomin">
+                <CardContent>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </CardContent>
+            </Card>
+        </Grid>
+    </Story>
+</Canvas>
+
+# Card effects
+<Canvas>
+    <Story name="effect">
+        <Grid>
+            <Card effect="mirror" animation="zoomin">
+                <CardContent>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </CardContent>
+            </Card>
+        </Grid>
+    </Story>
+</Canvas>
+
+# statics
