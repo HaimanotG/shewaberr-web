@@ -1,0 +1,39 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Typography } from 'components/atoms/Typography';
+
+<Meta title="Atoms/Typography" component={Typography} />
+
+# Typography
+<Canvas>
+    <Story name="default">
+        <Typography> 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </Typography>
+    </Story>
+</Canvas>
+
+# Typography sizes
+<Canvas>
+    <Story name="size">
+        <div>
+            <div>
+                <Typography size="lg"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Typography>
+            </div>
+            <div>
+                <Typography size="extra"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Typography>
+            </div>
+        </div>
+    </Story>
+</Canvas>
+
+# Typography Numeric Fonts
+<Canvas>
+    <Story name="numeric">
+        <Typography numeric="ordinal">1st</Typography>
+    </Story>
+</Canvas>
