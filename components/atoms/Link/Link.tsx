@@ -5,6 +5,7 @@ export const Link = ({ children, href = '#', target = '', className = Styles.lin
     <a
         href={href}
         target={target}
+        className={className}
         >
         {children}
     </a>

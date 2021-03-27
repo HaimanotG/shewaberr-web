@@ -1,11 +1,12 @@
 import React from 'react';
 
-export const ShewaberrFull = (props) => (
+export const ShewaberrFull = ({height = "50px", fill }) => (
+  
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 1376.53 337"
-      {...props}
+      style={{ height: height}}
     >
       <defs>
         <clipPath id="prefix__clip-path">
@@ -68,6 +69,7 @@ export const ShewaberrFull = (props) => (
               d="M182.5 123.63v19.74a503.6 503.6 0 0067.41-6.68c.16 0 .34-.05.52-.1 1.37-.23 2.75-.45 4.15-.71 2.46-.43 4.94-.88 7.44-1.37v35.09c-1 .2-2.12.41-3.26.6-8 1.5-17.91 3.15-29.42 4.58-.41.07-.85.12-1.27.17a510.64 510.64 0 01-61.7 3.71 510.3 510.3 0 01-61.71-3.66c-.43 0-.87-.1-1.28-.17-11.5-1.43-21.46-3.08-29.42-4.58-1.13-.19-2.22-.4-3.26-.6v-35.14c2.49.49 5 .94 7.43 1.37 1.4.26 2.79.48 4.16.71.18 0 .36.07.52.1a503.31 503.31 0 0067.4 6.68v-19.74a540.67 540.67 0 01-85.15-9.3v-37.2a536.11 536.11 0 00101.3 9.63 536.28 536.28 0 00101.31-9.63v37.2a541 541 0 01-85.17 9.3z"
             />
             <text
+              style={{ fill: fill }}
               transform="translate(385.34 262.45)"
               fontSize={168.7}
               fontFamily="HelveticaNeueLTStd-BlkCnO,Helvetica Neue LT Std"
@@ -92,7 +94,7 @@ export const ShewaberrFull = (props) => (
                 {".com"}
               </tspan>
             </text>
-            <text
+            <text style={{ fill: fill }}
               transform="translate(399.39 125.14)"
               fontSize={80.4}
               fontFamily="EthiopicWashRaBold,Ethiopic WashRa Bold"
