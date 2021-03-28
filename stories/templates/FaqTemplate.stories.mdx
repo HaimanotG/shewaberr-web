@@ -1,0 +1,28 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+    FaqTemplate,
+    FaqTemplateContent
+} from 'components/templates/FaqTemplate';
+import ReactPlaceholder from 'react-placeholder';
+
+
+<Meta title="Templates/FaqTemplate" component={FaqTemplate} />
+
+# FAQ Template
+<Canvas>
+    <Story name="default">
+        <FaqTemplate>
+            <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: '100%', height: 60 }} />
+            <FaqTemplateContent>
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 800, height: 60 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 800, height: 60 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 800, height: 60 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 800, height: 60 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 800, height: 60 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 800, height: 60 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 800, height: 60 }} />
+            </FaqTemplateContent>
+            <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: '100%', height: 500 }} />
+        </FaqTemplate>
+    </Story>
+</Canvas>
