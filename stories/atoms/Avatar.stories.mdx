@@ -1,0 +1,21 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Avatar, AvatarWrapper, AvatarText, AvatarWrapped } from 'components/atoms/Avatar';
+
+<Meta title="Atoms/Avatar" component={Avatar} />
+
+# Avatar
+<Canvas>
+    <Story name="default">
+        <Avatar />
+    </Story>
+</Canvas>
+
+# Avatar with username
+<Canvas>
+    <Story name="with username">
+        <AvatarWrapper>
+            <AvatarWrapped />
+            <AvatarText>Kate Horwitz</AvatarText>
+        </AvatarWrapper>
+    </Story>
+</Canvas>

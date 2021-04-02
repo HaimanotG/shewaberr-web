@@ -1,0 +1,49 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Testimonials } from 'components/organisms/Testimonials';
+import { Testimonial } from 'components/molecules/Testimonial';
+import { Typography } from 'components/atoms/Typography';
+import { Flex } from 'components/atoms/Flex';
+import { Avatar } from 'components/atoms/Avatar';
+import { Link } from 'components/atoms/Link';
+
+<Meta title="Organisms/Testimonials" component={Testimonials} />
+
+# Testimonial
+<Canvas>
+    <Story name="default">
+        <Testimonials
+            title={<Typography size="extra">Testimonials</Typography>}
+            >
+            <Testimonial>
+                <Typography leading="relaxed">
+                    Synth chartreuse iPhone lomo cray raw denim brunch everyday 
+                    carry neutra before they sold out fixie 90's microdosing. 
+                    Tacos pinterest fanny pack venmo, post-ironic heirloom 
+                    try-hard pabst authentic iceland.
+                </Typography>
+                <Link>
+                    <Avatar src="https://i.pravatar.cc/300"/>
+                    <Flex grow="1">
+                        <Typography>Holden Caulfield</Typography>
+                        <Typography>UI Developer</Typography>
+                    </Flex>
+                </Link>
+            </Testimonial>
+            <Testimonial>
+                <Typography leading="relaxed">
+                    Synth chartreuse iPhone lomo cray raw denim brunch everyday 
+                    carry neutra before they sold out fixie 90's microdosing. 
+                    Tacos pinterest fanny pack venmo, post-ironic heirloom 
+                    try-hard pabst authentic iceland.
+                </Typography>
+                <Link>
+                    <Avatar src="https://i.pravatar.cc/300"/>
+                    <Flex grow="1">
+                        <Typography>Holden Caulfield</Typography>
+                        <Typography>UI Developer</Typography>
+                    </Flex>
+                </Link>
+            </Testimonial>
+        </Testimonials>
+    </Story>
+</Canvas>

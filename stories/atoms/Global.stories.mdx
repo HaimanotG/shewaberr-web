@@ -1,0 +1,51 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+    ColorBox,
+    ColorGroup,
+    ColorPlatter
+} from 'components/molecules/ColorPlatter';
+
+<Meta title="Atoms/Global" component={ColorPlatter} />
+
+<Canvas>
+    <Story name="color platter">
+        <ColorPlatter>
+            <ColorGroup name="Orange" color="#ff7200">
+                <ColorBox color="#fff6f0" />
+                <ColorBox color="#ffeee0" />
+                <ColorBox color="#ffdcc2" />
+                <ColorBox color="#ffba85" />
+                <ColorBox color="#ff8e38" />
+                <ColorBox color="#e66300" />
+                <ColorBox color="#b85000" />
+                <ColorBox color="#8f3e00" />
+                <ColorBox color="#753300" />
+                <ColorBox color="#6b2e00" />
+            </ColorGroup>
+            <ColorGroup name="Green" color="#006252">
+                <ColorBox color="#dbfff9" />
+                <ColorBox color="#c2fff5" />
+                <ColorBox color="#66ffe6" />
+                <ColorBox color="#00ebc4" />
+                <ColorBox color="#00c7a6" />
+                <ColorBox color="#00a388" />
+                <ColorBox color="#00806a" />
+                <ColorBox color="#006655" />
+                <ColorBox color="#005244" />
+                <ColorBox color="#004d40" />
+            </ColorGroup>
+            <ColorGroup name="Blue" color="#1C3FAA">
+                <ColorBox color="#f6f8fe" />
+                <ColorBox color="#eef1fc" />
+                <ColorBox color="#dce3f9" />
+                <ColorBox color="#becbf4" />
+                <ColorBox color="#96aced" />
+                <ColorBox color="#6b8ae6" />
+                <ColorBox color="#436adf" />
+                <ColorBox color="#234fd1" />
+                <ColorBox color="#1d40aa" />
+                <ColorBox color="#1b3b9d" />
+            </ColorGroup>
+        </ColorPlatter>
+    </Story>
+</Canvas>

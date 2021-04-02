@@ -1,0 +1,22 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Link } from 'components/atoms/Link';
+import { Download } from '@styled-icons/bootstrap';
+
+<Meta title="Atoms/Link" component={Link} />
+
+# Link
+<Canvas>
+    <Story name="default">
+        <Link>Link</Link>
+    </Story>
+</Canvas>
+
+# Link with icon
+<Canvas>
+    <Story name="with icon">
+        <Link>
+            <Download size="18 !important" />
+            <span>Download</span>
+        </Link>
+    </Story>
+</Canvas>

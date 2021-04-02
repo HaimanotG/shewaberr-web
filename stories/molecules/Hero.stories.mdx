@@ -1,0 +1,45 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+    Hero,
+    HeroElement,
+    HeroElementStart
+} from 'components/molecules/Hero';
+import ReactPlaceholder from 'react-placeholder';
+import { Typography } from 'components/atoms/Typography';
+
+<Meta title="Molecules/Hero" component={Hero} />
+
+# Hero
+<Canvas>
+    <Story name="default">
+        <Hero>
+            <HeroElement>
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: '100%', height: '500px' }} />
+            </HeroElement>
+            <HeroElement>
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: '100%', height: '500px' }} />
+            </HeroElement>
+        </Hero>
+    </Story>
+</Canvas>
+
+# Hero pouplated
+<Canvas>
+    <Story name="pouplated">
+        <Hero>
+            <HeroElementStart>
+                <Typography size="lg">Let's make the best investments</Typography>
+                <Typography size="extra">
+                    A <span style={{color: '#ff7200'}}>BOOK</span><br />
+                    CAN CHANGE<br />
+                    <span style={{color: '#006252'}}>YOUR LIFE !</span>
+                </Typography>
+                <Typography size="lg">Read Listen Learn Repeat</Typography>
+                
+            </HeroElementStart>
+            <HeroElement>
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: '100%', height: '500px' }} />
+            </HeroElement>
+        </Hero>
+    </Story>
+</Canvas>

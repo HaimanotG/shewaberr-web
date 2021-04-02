@@ -1,0 +1,14 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Tooltip } from 'components/atoms/Tooltip';
+import { InfoCircle } from '@styled-icons/bootstrap';
+
+<Meta title="Atoms/Tooltip" component={Tooltip} />
+
+# Tooltip
+<Canvas>
+    <Story name="default">
+        <Tooltip tooltipText="Tooltip text">
+            <InfoCircle size="18"/>
+        </Tooltip>
+    </Story>
+</Canvas>

@@ -1,0 +1,19 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+    Nav,
+    NavItem
+} from 'components/molecules/Nav';
+
+<Meta title="Molecules/Nav" component={Nav} />
+
+# Nav
+<Canvas>
+    <Story name="default">
+        <Nav>
+            <NavItem>Menu</NavItem>
+            <NavItem>About</NavItem>
+            <NavItem>Blog</NavItem>
+            <NavItem>Map</NavItem>
+        </Nav>
+    </Story>
+</Canvas>

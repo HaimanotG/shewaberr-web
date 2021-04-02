@@ -1,0 +1,58 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+    Navbar,
+    NavbarContent,
+    NavbarBrandDesktop
+} from 'components/organisms/Navbar';
+import { Link } from 'components/atoms/Link';
+import { Image } from 'components/atoms/Image';
+import { ShewaberrFull } from 'components/atoms/Logo';
+import { Nav, NavItem } from 'components/molecules/Nav';
+import { Input } from 'components/atoms/Input';
+import { Cart3, Search as SearchIcon } from '@styled-icons/bootstrap';
+import { Search, SearchLeft, SearchRight } from 'components/molecules/Search';
+
+
+<Meta title="Organisms/Navbar" component={Navbar} />
+
+# Navbar
+<Canvas>
+    <Story name="default">
+        <Navbar>
+            <Link>
+                <ShewaberrFull fill="#ff7200"/>
+            </Link>
+            
+             <Nav>
+                <NavItem>Menu</NavItem>
+                <NavItem>About</NavItem>
+                <NavItem>Blog</NavItem>
+                <NavItem>Map</NavItem>
+                <NavItem>
+                    <Cart3 size="18" />
+                </NavItem>
+            </Nav>
+        </Navbar>
+    </Story>
+</Canvas>
+
+# Themed
+<Canvas>
+    <Story name="orange background color">
+        <Navbar background="orange">
+            <Link>
+                <ShewaberrFull />
+            </Link>
+            
+            <Search>
+                <SearchLeft>
+                    L
+                </SearchLeft>
+                <Input type="search" placeholder="Search by title, author or category"/>
+                <SearchRight>
+                    <SearchIcon size="18"/>
+                </SearchRight>
+            </Search>
+        </Navbar>
+    </Story>
+</Canvas>

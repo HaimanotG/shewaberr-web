@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+    LoginTemplate,
+    LoginTemplateHeader,
+    LoginTemplateForm,
+    LoginTemplateDescription
+} from 'components/templates/LoginTemplate';
+import ReactPlaceholder from 'react-placeholder';
+
+<Meta title="Templates/LoginTemplate" component={LoginTemplate} />
+
+# Login Template
+<Canvas>
+    <Story name="default">
+        <LoginTemplate>
+            <LoginTemplateHeader>
+                <ReactPlaceholder type='round' ready={false} color='#E0E0E0' style={{ width: 100, height: 100 }} />
+            </LoginTemplateHeader>
+            <LoginTemplateDescription>
+                <ReactPlaceholder type='textRow' ready={false} color='#E0E0E0' style={{ width: 400 }} />
+            </LoginTemplateDescription>
+            <LoginTemplateForm>
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 300, height: 40 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 300, height: 40 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 300, height: 40 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 300, height: 40 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 300, height: 40 }} />
+                <ReactPlaceholder type='rect' ready={false} color='#E0E0E0' style={{ width: 300, height: 40 }} />
+            </LoginTemplateForm>
+        </LoginTemplate>
+    </Story>
+</Canvas>
