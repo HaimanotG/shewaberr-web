@@ -9,7 +9,9 @@ import { Image } from 'components/atoms/Image';
 import { ShewaberrFull } from 'components/atoms/Logo';
 import { Nav, NavItem } from 'components/molecules/Nav';
 import { Input } from 'components/atoms/Input';
-import { Cart3 } from '@styled-icons/bootstrap';
+import { Cart3, Search as SearchIcon } from '@styled-icons/bootstrap';
+import { Search, SearchLeft, SearchRight } from 'components/molecules/Search';
+
 
 <Meta title="Organisms/Navbar" component={Navbar} />
 
@@ -30,6 +32,27 @@ import { Cart3 } from '@styled-icons/bootstrap';
                     <Cart3 size="18" />
                 </NavItem>
             </Nav>
+        </Navbar>
+    </Story>
+</Canvas>
+
+# Themed
+<Canvas>
+    <Story name="orange background color">
+        <Navbar background="orange">
+            <Link>
+                <ShewaberrFull />
+            </Link>
+            
+            <Search>
+                <SearchLeft>
+                    L
+                </SearchLeft>
+                <Input type="search" placeholder="Search by title, author or category"/>
+                <SearchRight>
+                    <SearchIcon size="18"/>
+                </SearchRight>
+            </Search>
         </Navbar>
     </Story>
 </Canvas>

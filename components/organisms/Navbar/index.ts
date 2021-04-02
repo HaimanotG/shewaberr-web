@@ -4,8 +4,11 @@ import { NavbarBrandDesktop as BaseNavbarBrandDesktop } from './__brand@desktop/
 import { compose } from 'util/bem';
 import { NavbarBrandDesktopAlignLeft } from './__brand@desktop/_align/_left/Navbar__brand@dektop_align_left';
 import { NavbarBrandDesktopAlignCenter } from './__brand@desktop/_align/_center/Navbar__brand@dektop_align_center';
+import { NavbarOrange } from './_background/_orange/Navbar_orange';
 
-export const Navbar = Base;
+export const Navbar = compose(
+    NavbarOrange
+)(Base);
 
 export const NavbarBrandDesktop = compose(
     NavbarBrandDesktopAlignLeft,
