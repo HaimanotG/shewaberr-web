@@ -8,6 +8,8 @@ import FormControl from '@material-ui/core/FormControl';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import { ThemeProvider } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+
 import { OrangeTheme } from 'theme/Orange';
 
 export default () => {
@@ -32,29 +34,45 @@ export default () => {
   };
 
 	return (
-		<ThemeProvider theme={OrangeTheme}> 
-			<TextField size="small" label="Phone Number" variant="outlined" InputLabelProps={{ shrink: true }}/>
-			<FormControl variant="outlined" size="small">
-          <InputLabel htmlFor="outlined-adornment-password" shrink={true}>Password</InputLabel>
-          <OutlinedInput
-            type={values.showPassword ? 'text' : 'password'}
-            value={values.password}
-            onChange={handleChange('password')}
-            endAdornment={
-              <InputAdornment position="end">
-                <IconButton
-                  aria-label="toggle password visibility"
-                  onClick={handleClickShowPassword}
-                  onMouseDown={handleMouseDownPassword}
-                  edge="end"
-                >
-                  {values.showPassword ? <Visibility /> : <VisibilityOff />}
-                </IconButton>
-              </InputAdornment>
-            }
-            labelWidth={70}
-          />
-			</FormControl>
+		<ThemeProvider theme={OrangeTheme}>
+			<Container maxWidth="xs">
+				<form>
+					<TextField
+						size="small"
+						margin="normal"
+						label="Phone Number"
+						variant="outlined"
+						InputLabelProps={{ shrink: true }}
+						fullWidth
+					/>
+					<FormControl
+						variant="outlined"
+						size="small"
+						margin="normal"
+						fullWidth
+						>
+							<InputLabel htmlFor="outlined-adornment-password" shrink={true}>Password</InputLabel>
+							<OutlinedInput
+								type={values.showPassword ? 'text' : 'password'}
+								value={values.password}
+								onChange={handleChange('password')}
+								endAdornment={
+									<InputAdornment position="end">
+										<IconButton
+											aria-label="toggle password visibility"
+											onClick={handleClickShowPassword}
+											onMouseDown={handleMouseDownPassword}
+											edge="end"
+										>
+											{values.showPassword ? <Visibility /> : <VisibilityOff />}
+										</IconButton>
+									</InputAdornment>
+								}
+								labelWidth={70}
+							/>
+					</FormControl>
+				</form>
+			</Container>
 		</ThemeProvider>
 	)
 }
