@@ -9,8 +9,11 @@ import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
 import { OrangeTheme } from 'theme/Orange';
+import { ShewaberrMini } from 'components/Logo';
 
 export default () => {
 	const [values, setValues] = React.useState({
@@ -36,7 +39,11 @@ export default () => {
 	return (
 		<ThemeProvider theme={OrangeTheme}>
 			<Container maxWidth="xs">
-				<form>
+				<div className="flex flex-col items-center mb-10 gap-10">
+					<ShewaberrMini height="100" width="100"/>
+					<Typography variant="h4">Creating Account</Typography>
+				</div>
+				<form className="flex flex-col">
 					<TextField
 						size="small"
 						margin="normal"
@@ -71,6 +78,17 @@ export default () => {
 								labelWidth={70}
 							/>
 					</FormControl>
+					<div className="m-10 flex items-center justify-center">
+						<Button
+							className="w-full h-12"
+							variant="contained"
+							color="primary"
+							size="large"
+							disableElevation
+							>
+							Create Account
+						</Button>
+					</div>
 				</form>
 			</Container>
 		</ThemeProvider>
