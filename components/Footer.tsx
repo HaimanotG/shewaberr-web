@@ -12,7 +12,7 @@ import CustomerServiceIcon from 'components/CustomerServiceIcon';
 export const Footer = () => {
   return (
     <ThemeProvider theme={MineShaft}>
-			<div className="w-full flex flex-col items-center text-white p-10" style={{background: '#262626'}}>
+			<div className="w-full flex flex-col items-center text-white p-10 mt-72" style={{background: '#262626'}}>
 				<div className="flex flex-col items-center justify-center gap-0">
 					<Typography variant="h5" className="font-bold">
 						Customer Service

@@ -10,6 +10,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { OrangeTheme } from 'theme/Orange';
 import { ShewaberrMini } from 'components/Logo';
 import { Navbar } from 'components/Navbar';
+import { Footer } from 'components/Footer';
 
 export default () => {
 	const [values, setValues] = React.useState({
@@ -85,6 +86,7 @@ const handleMouseDownPassword = (event) => {
      	 		</Accordion>	
 				</div>
 			</Container>
+			<Footer />
 		</ThemeProvider>
 	)
 }
