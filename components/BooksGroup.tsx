@@ -11,7 +11,7 @@ import { Typography } from '@material-ui/core';
 export const BookGroup = () => {
   return (
     <ThemeProvider theme={OrangeTheme}>
-      <div className="inline-flex flex-col rounded-lg p-5" style={{background: '#00A287'}}>
+      <div className="inline-flex flex-col rounded-lg p-5" style={{background: "linear-gradient(90deg, #006252 0%, #00A287 100%)"}}>
         <Typography variant="h4" className="mb-5 font-bold text-white">Top 10 Book in History</Typography>
         <div className="flex gap-10">
           <Card className="w-48 h-72 rounded-lg">
