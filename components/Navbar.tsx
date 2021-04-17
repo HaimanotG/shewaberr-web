@@ -13,7 +13,7 @@ import { Button } from '@material-ui/core';
 export const Navbar = () => {
   return (
 		<ThemeProvider theme={OrangeTheme}>
-			<AppBar position="static">
+			<AppBar position="static" style={{background: 'linear-gradient(90deg, #FF6600 0%, #FF9800 100%)'}}>
 				<Toolbar>
 					<ShewaberrFull fill="#fff" />
 					<InputBase
@@ -21,7 +21,7 @@ export const Navbar = () => {
             className="bg-white ml-28 rounded-tl rounded-bl px-6 py-1 w-3/5"
             inputProps={{ 'aria-label': 'search' }}
           />
-        <Button
+        		<Button
 					type="submit" 
 					className="h-10 rounded-tr rounded-br"
 					style={{borderRadius: '0'}}
