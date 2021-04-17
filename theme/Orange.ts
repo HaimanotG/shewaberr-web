@@ -8,7 +8,7 @@ export const OrangeTheme = createMuiTheme({
 			contrastText: '#fff'
 		},
 		secondary: {
-			main: '#00A287',
+			main: '#006252',
 			contrastText: '#fff'
 		}
 	}
