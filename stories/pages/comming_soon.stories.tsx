@@ -11,6 +11,3 @@ export default {
 const Template: Story = (args) => <CommingSoonPage {...args} />;
 
 export const CommingSoon = Template.bind({});
-CommingSoonPage.args = {
-
-};
