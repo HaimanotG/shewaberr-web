@@ -17,20 +17,8 @@ import { OrangeTheme } from 'theme/Orange';
 import { ShewaberrMini } from 'components/Logo';
 import { Navbar } from 'components/Navbar';
 import { Footer } from 'components/Footer';
+import { Hero } from 'components/Hero';
 
-function Item(props)
-{
-    return (
-        <Paper>
-            <h2>{props.item.name}</h2>
-            <p>{props.item.description}</p>
-
-            <Button className="CheckButton">
-                Check it out!
-            </Button>
-        </Paper>
-    )
-}
 
 export default () => {
     const [open, setOpen] = useState(true)
@@ -39,9 +27,15 @@ export default () => {
         <ThemeProvider theme={OrangeTheme}>
             <div className="flex flex-col h-screen justify-between">
                 <Navbar />
-                <main>
-                    
-
+                <main className="">
+                    <Carousel navButtonsAlwaysVisible={true}>
+                        <div className="mt-20 ml-48">
+                            <Hero />
+                        </div>
+                        <div className="m-36">
+                            Carousel two
+                        </div>
+                    </Carousel>
                     
                 </main>
                 <Footer />

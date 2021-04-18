@@ -13,7 +13,7 @@ import { Button } from '@material-ui/core';
 export const Navbar = () => {
   return (
 		<ThemeProvider theme={OrangeTheme}>
-			<AppBar position="static" className="fixed" style={{background: 'linear-gradient(90deg, #FF6600 0%, #FF9800 100%)'}}>
+			<AppBar position="static" className="" style={{background: 'linear-gradient(90deg, #FF6600 0%, #FF9800 100%)'}}>
 				<Toolbar>
 					<ShewaberrFull fill="#fff" />
 					<InputBase
