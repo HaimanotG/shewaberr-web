@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 
 import FedexLogo from 'components/Logo/Fedex';
 
-export const DeliveryCard = () => {
+export const FedexDeliveryCard = () => {
     return (
         <Paper className="p-5 inline-flex flex-row gap-8 items-center rounded-md shadow-lg">
             <FedexLogo width="80" height="80"/>

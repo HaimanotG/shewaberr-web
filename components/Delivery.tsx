@@ -7,6 +7,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 
+import { FedexDeliveryCard } from 'components/DeliveryCard';
+
 export const Delivery = () => {
     const [value, setValue] = React.useState('female');
 
@@ -15,26 +17,18 @@ export const Delivery = () => {
     };
 
     return (
-        <div className="flex flex-col gap-6 w-1/2">
+        <div className="flex flex-col gap-6 ">
             <div>
                 <Typography variant="h5">Delivery</Typography>
             </div>
-            <div className="grid grid-cols-2 gap-5 ml-5">
             <FormControl component="fieldset">
-                <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
-                    <FormControlLabel value="female" control={<Radio />} label={<p>sdff</p>} />
-                    <FormControlLabel value="male" control={<Radio />} label="Male" />
-                    <FormControlLabel value="other" control={<Radio />} label="Other" />
-                    <FormControlLabel value="disabled" disabled control={<Radio />} label="(Disabled option)" />
+                <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange} className="inline-grid grid-cols-2 gap-y-20 gap-x-0 ml-5">
+                    <FormControlLabel value="female" control={<Radio />} label={<FedexDeliveryCard />} />
+                    <FormControlLabel value="male" control={<Radio />} label={<FedexDeliveryCard />} />
+                    <FormControlLabel value="other" control={<Radio />} label={<FedexDeliveryCard />} />
+                    <FormControlLabel value="a" control={<Radio />} label={<FedexDeliveryCard />} />
                 </RadioGroup>
-                </FormControl>
-                <Paper className="p-5 mb-10">
-                    dsffd
-                </Paper>
-                <Paper className="p-5 mb-10">
-                    dsffd
-                </Paper>
-            </div>
+            </FormControl>
         </div>
     )
 }

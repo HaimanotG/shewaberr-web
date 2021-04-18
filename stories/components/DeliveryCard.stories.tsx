@@ -1,14 +1,14 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { DeliveryCard } from  '../../components/DeliveryCard';
+import { FedexDeliveryCard } from  '../../components/DeliveryCard';
 
 export default {
   title: 'Components/DeliveryCard',
-  component: DeliveryCard
+  component: FedexDeliveryCard
 } as Meta; 
 
-const Template: Story = (args) => <DeliveryCard {...args} />;
+const Template: Story = (args) => <FedexDeliveryCard {...args} />;
 
 export const DeliveryCardComponent = Template.bind({});
 DeliveryCardComponent.args = {};
