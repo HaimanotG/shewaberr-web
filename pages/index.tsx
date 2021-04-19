@@ -27,10 +27,10 @@ export default () => {
                 >
                 <Container maxWidth="xl" className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 justify-items-center lg:mt-44">
                     <div className="inline-flex flex-col justify-center items-center">
-                        <Typography className="text-white lg:text-5xl font-extrabold lg:mb-32 lg:ml-56">Coming Really Soon...</Typography>
-                        <img className="object-cover min-w-full h-full lg:ml-20 w-1/2 hidden lg:block md:block" src="https://i.ibb.co/BZQ0Nyp/Asset-80-4x.png" />
+                        <Typography className="text-white lg:text-3xl font-extrabold lg:mb-32 lg:ml-56 hidden sm:block">Coming Really Soon...</Typography>
+                        <img className="lg:ml-20 hidden lg:block md:block" src="https://i.ibb.co/BZQ0Nyp/Asset-80-4x.png" />
                         <img width="238" className="m-10 block md:hidden lg:hidden" src="https://i.ibb.co/Kx3mLhj/Asset-640-4x.png" />
-                        <Typography className="text-white lg:text-5xl font-extrabold lg:mt-28 lg:ml-44">Orignal English Non-fiction Books</Typography>
+                        <Typography className="text-white lg:text-2xl font-extrabold lg:mt-28 lg:ml-44">Orignal English Non-fiction Books</Typography>
                     </div>
                     <div
                         className="shadow-xl inline-flex flex-col p-12"
