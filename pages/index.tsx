@@ -18,18 +18,19 @@ export default () => {
     return (
         <ThemeProvider theme={OrangeTheme}>
             <div
-                className="w-full h-full fixed block top-0 left-0 "
+                className="w-full h-full overflow-y-scroll fixed block top-0 left-0 "
                 style={{
                     background: 'linear-gradient(rgba(29, 38, 113, 0.3), rgba(195, 55, 100, 0.3)), url("https://media-public.canva.com/MACWnG1UY2I/1/screen_2x.jpg")',
                     backgroundSize: "cover",
                     backgroundPosition: "center center"
                 }}
                 >
-                <Container maxWidth="xl" className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 justify-items-center overflow-hidden mt-44">
+                <Container maxWidth="xl" className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 justify-items-center lg:mt-44">
                     <div className="inline-flex flex-col justify-center items-center">
-                        <Typography variant="h3" className="text-white font-extrabold mb-32 ml-56">Coming Really Soon...</Typography>
-                        <img className="object-cover min-w-full h-full ml-20" src="https://i.ibb.co/BZQ0Nyp/Asset-80-4x.png" />
-                        <Typography variant="h4" className="text-white font-extrabold mt-28 ml-44">Orignal English Non-fiction Books</Typography>
+                        <Typography className="text-white lg:text-5xl font-extrabold lg:mb-32 lg:ml-56">Coming Really Soon...</Typography>
+                        <img className="object-cover min-w-full h-full lg:ml-20 w-1/2 hidden lg:block md:block" src="https://i.ibb.co/BZQ0Nyp/Asset-80-4x.png" />
+                        <img width="238" className="m-10 block md:hidden lg:hidden" src="https://i.ibb.co/Kx3mLhj/Asset-640-4x.png" />
+                        <Typography className="text-white lg:text-5xl font-extrabold lg:mt-28 lg:ml-44">Orignal English Non-fiction Books</Typography>
                     </div>
                     <div
                         className="shadow-xl inline-flex flex-col p-12"
@@ -55,6 +56,7 @@ export default () => {
                     </div>
                 </Container>
                 <div
+                    className="hidden md:block"
                     style={{
                         position: "fixed",
                         bottom: "65px",
