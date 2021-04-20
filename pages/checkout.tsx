@@ -11,7 +11,6 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import '../styles/checkout.css';
 import { OrangeTheme } from 'theme/Orange';
 import { ShewaberrMini } from 'components/Logo';
 import { CheckoutNavbar } from 'components/CheckoutNavbar';
